@@ -144,3 +144,4 @@ D:\project\TraderVoyages\src\TraderVoyages.API\bin\Debug\net8.0\AutoMapper.dll
 D:\project\TraderVoyages\src\TraderVoyages.API\bin\Debug\net8.0\FluentValidation.dll
 D:\project\TraderVoyages\src\TraderVoyages.API\bin\Debug\net8.0\TraderVoyages.Application.dll
 D:\project\TraderVoyages\src\TraderVoyages.API\bin\Debug\net8.0\TraderVoyages.Application.pdb
+D:\project\TraderVoyages\src\TraderVoyages.API\obj\Debug\net8.0\TraderVoyages.API.sourcelink.json

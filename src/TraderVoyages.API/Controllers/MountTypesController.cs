@@ -15,7 +15,7 @@ namespace TraderVoyages.API.Controllers
             _mountTypeService = mountTypeService;
         }
 
-        [HttpGet]
+        [HttpGet("GetMountTypes")]
         public IActionResult GetMountTypes()
         {
             var mountTypes = _mountTypeService.GetMountTypes();

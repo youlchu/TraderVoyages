@@ -19,17 +19,27 @@ namespace TraderVoyages.API.Controllers
             _playerService = playerService;
         }
 
+        // get players
+        [HttpGet("GetPlayers")]
+        public IActionResult GetPlayers()
+        {
+            var players = _playerService.GetPlayers();
+            return Ok(players);
+        }
+
         [HttpPost("CreatePlayer")]
         public async Task<IActionResult> CreatePlayer([FromBody] CreatePlayerDto playerDto)
         {
+            if (playerDto.MountTypeID == 0)
+            {
+                return BadRequest("Lütfen binek hayvanı seçiniz");
+            }
+
             var player = new Player
             {
                 Name = playerDto.Name,
-                Money = 500,
                 MountTypeID = playerDto.MountTypeID,
                 CurrentCityID = playerDto.CurrentCityID,
-                XCoordinate = _random.Next(0, 151),
-                YCoordinate = _random.Next(0, 151)
             };
 
             await _playerService.AddPlayer(player);
