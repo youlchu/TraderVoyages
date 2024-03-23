@@ -1,0 +1,12 @@
+[
+  { "CityID": 1, "Name": "Quixotica", "XCoordinate": 10, "YCoordinate": 20 },
+  { "CityID": 2, "Name": "Avalonia", "XCoordinate": 30, "YCoordinate": 40 },
+  { "CityID": 3, "Name": "Eldorado", "XCoordinate": 50, "YCoordinate": 60 },
+  { "CityID": 4, "Name": "Atlantis", "XCoordinate": 70, "YCoordinate": 80 },
+  { "CityID": 5, "Name": "Shangri-La", "XCoordinate": 90, "YCoordinate": 100 },
+  { "CityID": 6, "Name": "Xanadu", "XCoordinate": 110, "YCoordinate": 120 },
+  { "CityID": 7, "Name": "Narnia", "XCoordinate": 130, "YCoordinate": 140 },
+  { "CityID": 8, "Name": "Hogwarts", "XCoordinate": 150, "YCoordinate": 160 },
+  { "CityID": 9, "Name": "Neverland", "XCoordinate": 170, "YCoordinate": 180 },
+  { "CityID": 10, "Name": "Gotham", "XCoordinate": 190, "YCoordinate": 200 }
+]

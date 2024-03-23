@@ -1,0 +1,17 @@
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\bin\Debug\net8.0\TraderVoyages.Infrastructure.deps.json
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\bin\Debug\net8.0\TraderVoyages.Infrastructure.runtimeconfig.json
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\bin\Debug\net8.0\TraderVoyages.Infrastructure.dll
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\bin\Debug\net8.0\TraderVoyages.Infrastructure.pdb
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\bin\Debug\net8.0\TraderVoyages.Domain.dll
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\bin\Debug\net8.0\TraderVoyages.Domain.pdb
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\obj\Debug\net8.0\TraderVoyages.Infrastructure.csproj.AssemblyReference.cache
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\obj\Debug\net8.0\TraderVoyages.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\obj\Debug\net8.0\TraderVoyages.Infrastructure.AssemblyInfoInputs.cache
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\obj\Debug\net8.0\TraderVoyages.Infrastructure.AssemblyInfo.cs
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\obj\Debug\net8.0\TraderVoyages.Infrastructure.csproj.CoreCompileInputs.cache
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\obj\Debug\net8.0\TraderVo.103E8C60.Up2Date
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\obj\Debug\net8.0\TraderVoyages.Infrastructure.dll
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\obj\Debug\net8.0\refint\TraderVoyages.Infrastructure.dll
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\obj\Debug\net8.0\TraderVoyages.Infrastructure.pdb
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\obj\Debug\net8.0\TraderVoyages.Infrastructure.genruntimeconfig.cache
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\obj\Debug\net8.0\ref\TraderVoyages.Infrastructure.dll

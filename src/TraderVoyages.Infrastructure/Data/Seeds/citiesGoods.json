@@ -1,0 +1,282 @@
+[
+  {
+    "CityGoodID": 1,
+    "CityID": 1,
+    "GoodID": 1,
+    "PurchasePrice": 20,
+    "SalePrice": 25
+  },
+  {
+    "CityGoodID": 2,
+    "CityID": 1,
+    "GoodID": 2,
+    "PurchasePrice": 30,
+    "SalePrice": 35
+  },
+  {
+    "CityGoodID": 3,
+    "CityID": 1,
+    "GoodID": 3,
+    "PurchasePrice": 25,
+    "SalePrice": 30
+  },
+  {
+    "CityGoodID": 4,
+    "CityID": 1,
+    "GoodID": 4,
+    "PurchasePrice": 15,
+    "SalePrice": 20
+  },
+  {
+    "CityGoodID": 5,
+    "CityID": 2,
+    "GoodID": 1,
+    "PurchasePrice": 22,
+    "SalePrice": 27
+  },
+  {
+    "CityGoodID": 6,
+    "CityID": 2,
+    "GoodID": 2,
+    "PurchasePrice": 32,
+    "SalePrice": 37
+  },
+  {
+    "CityGoodID": 7,
+    "CityID": 2,
+    "GoodID": 3,
+    "PurchasePrice": 27,
+    "SalePrice": 32
+  },
+  {
+    "CityGoodID": 8,
+    "CityID": 2,
+    "GoodID": 4,
+    "PurchasePrice": 17,
+    "SalePrice": 22
+  },
+  {
+    "CityGoodID": 9,
+    "CityID": 3,
+    "GoodID": 1,
+    "PurchasePrice": 24,
+    "SalePrice": 29
+  },
+  {
+    "CityGoodID": 10,
+    "CityID": 3,
+    "GoodID": 2,
+    "PurchasePrice": 34,
+    "SalePrice": 39
+  },
+  {
+    "CityGoodID": 11,
+    "CityID": 3,
+    "GoodID": 3,
+    "PurchasePrice": 29,
+    "SalePrice": 34
+  },
+  {
+    "CityGoodID": 12,
+    "CityID": 3,
+    "GoodID": 4,
+    "PurchasePrice": 19,
+    "SalePrice": 24
+  },
+  {
+    "CityGoodID": 13,
+    "CityID": 4,
+    "GoodID": 1,
+    "PurchasePrice": 26,
+    "SalePrice": 31
+  },
+  {
+    "CityGoodID": 14,
+    "CityID": 4,
+    "GoodID": 2,
+    "PurchasePrice": 36,
+    "SalePrice": 41
+  },
+  {
+    "CityGoodID": 15,
+    "CityID": 4,
+    "GoodID": 3,
+    "PurchasePrice": 31,
+    "SalePrice": 36
+  },
+  {
+    "CityGoodID": 16,
+    "CityID": 4,
+    "GoodID": 4,
+    "PurchasePrice": 21,
+    "SalePrice": 26
+  },
+  {
+    "CityGoodID": 17,
+    "CityID": 5,
+    "GoodID": 1,
+    "PurchasePrice": 28,
+    "SalePrice": 33
+  },
+  {
+    "CityGoodID": 18,
+    "CityID": 5,
+    "GoodID": 2,
+    "PurchasePrice": 38,
+    "SalePrice": 43
+  },
+  {
+    "CityGoodID": 19,
+    "CityID": 5,
+    "GoodID": 3,
+    "PurchasePrice": 33,
+    "SalePrice": 38
+  },
+  {
+    "CityGoodID": 20,
+    "CityID": 5,
+    "GoodID": 4,
+    "PurchasePrice": 23,
+    "SalePrice": 28
+  },
+  {
+    "CityGoodID": 21,
+    "CityID": 6,
+    "GoodID": 1,
+    "PurchasePrice": 30,
+    "SalePrice": 35
+  },
+  {
+    "CityGoodID": 22,
+    "CityID": 6,
+    "GoodID": 2,
+    "PurchasePrice": 40,
+    "SalePrice": 45
+  },
+  {
+    "CityGoodID": 23,
+    "CityID": 6,
+    "GoodID": 3,
+    "PurchasePrice": 35,
+    "SalePrice": 40
+  },
+  {
+    "CityGoodID": 24,
+    "CityID": 6,
+    "GoodID": 4,
+    "PurchasePrice": 25,
+    "SalePrice": 30
+  },
+  {
+    "CityGoodID": 25,
+    "CityID": 7,
+    "GoodID": 1,
+    "PurchasePrice": 32,
+    "SalePrice": 37
+  },
+  {
+    "CityGoodID": 26,
+    "CityID": 7,
+    "GoodID": 2,
+    "PurchasePrice": 42,
+    "SalePrice": 47
+  },
+  {
+    "CityGoodID": 27,
+    "CityID": 7,
+    "GoodID": 3,
+    "PurchasePrice": 37,
+    "SalePrice": 42
+  },
+  {
+    "CityGoodID": 28,
+    "CityID": 7,
+    "GoodID": 4,
+    "PurchasePrice": 27,
+    "SalePrice": 32
+  },
+  {
+    "CityGoodID": 29,
+    "CityID": 8,
+    "GoodID": 1,
+    "PurchasePrice": 34,
+    "SalePrice": 39
+  },
+  {
+    "CityGoodID": 30,
+    "CityID": 8,
+    "GoodID": 2,
+    "PurchasePrice": 44,
+    "SalePrice": 49
+  },
+  {
+    "CityGoodID": 31,
+    "CityID": 8,
+    "GoodID": 3,
+    "PurchasePrice": 39,
+    "SalePrice": 44
+  },
+  {
+    "CityGoodID": 32,
+    "CityID": 8,
+    "GoodID": 4,
+    "PurchasePrice": 29,
+    "SalePrice": 34
+  },
+  {
+    "CityGoodID": 33,
+    "CityID": 9,
+    "GoodID": 1,
+    "PurchasePrice": 36,
+    "SalePrice": 41
+  },
+  {
+    "CityGoodID": 34,
+    "CityID": 9,
+    "GoodID": 2,
+    "PurchasePrice": 46,
+    "SalePrice": 51
+  },
+  {
+    "CityGoodID": 35,
+    "CityID": 9,
+    "GoodID": 3,
+    "PurchasePrice": 41,
+    "SalePrice": 46
+  },
+  {
+    "CityGoodID": 36,
+    "CityID": 9,
+    "GoodID": 4,
+    "PurchasePrice": 31,
+    "SalePrice": 36
+  },
+  {
+    "CityGoodID": 37,
+    "CityID": 10,
+    "GoodID": 1,
+    "PurchasePrice": 38,
+    "SalePrice": 43
+  },
+  {
+    "CityGoodID": 38,
+    "CityID": 10,
+    "GoodID": 2,
+    "PurchasePrice": 48,
+    "SalePrice": 53
+  },
+  {
+    "CityGoodID": 39,
+    "CityID": 10,
+    "GoodID": 3,
+    "PurchasePrice": 43,
+    "SalePrice": 48
+  },
+  {
+    "CityGoodID": 40,
+    "CityID": 10,
+    "GoodID": 4,
+    "PurchasePrice": 33,
+    "SalePrice": 38
+  }
+]

@@ -1,0 +1,17 @@
+D:\project\TraderVoyages\src\TraderVoyages.Application\bin\Debug\net8.0\TraderVoyages.Application.deps.json
+D:\project\TraderVoyages\src\TraderVoyages.Application\bin\Debug\net8.0\TraderVoyages.Application.dll
+D:\project\TraderVoyages\src\TraderVoyages.Application\bin\Debug\net8.0\TraderVoyages.Application.pdb
+D:\project\TraderVoyages\src\TraderVoyages.Application\bin\Debug\net8.0\TraderVoyages.Domain.dll
+D:\project\TraderVoyages\src\TraderVoyages.Application\bin\Debug\net8.0\TraderVoyages.Domain.pdb
+D:\project\TraderVoyages\src\TraderVoyages.Application\obj\Debug\net8.0\TraderVoyages.Application.csproj.AssemblyReference.cache
+D:\project\TraderVoyages\src\TraderVoyages.Application\obj\Debug\net8.0\TraderVoyages.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\TraderVoyages\src\TraderVoyages.Application\obj\Debug\net8.0\TraderVoyages.Application.AssemblyInfoInputs.cache
+D:\project\TraderVoyages\src\TraderVoyages.Application\obj\Debug\net8.0\TraderVoyages.Application.AssemblyInfo.cs
+D:\project\TraderVoyages\src\TraderVoyages.Application\obj\Debug\net8.0\TraderVoyages.Application.csproj.CoreCompileInputs.cache
+D:\project\TraderVoyages\src\TraderVoyages.Application\obj\Debug\net8.0\TraderVo.0DC0EE0A.Up2Date
+D:\project\TraderVoyages\src\TraderVoyages.Application\obj\Debug\net8.0\TraderVoyages.Application.dll
+D:\project\TraderVoyages\src\TraderVoyages.Application\obj\Debug\net8.0\refint\TraderVoyages.Application.dll
+D:\project\TraderVoyages\src\TraderVoyages.Application\obj\Debug\net8.0\TraderVoyages.Application.pdb
+D:\project\TraderVoyages\src\TraderVoyages.Application\obj\Debug\net8.0\ref\TraderVoyages.Application.dll
+D:\project\TraderVoyages\src\TraderVoyages.Application\bin\Debug\net8.0\TraderVoyages.Infrastructure.dll
+D:\project\TraderVoyages\src\TraderVoyages.Application\bin\Debug\net8.0\TraderVoyages.Infrastructure.pdb
