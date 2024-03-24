@@ -1,4 +1,3 @@
-// src/TraderVoyages.Application/DTOs/PlayerDTO.cs
 using TraderVoyages.Domain.Entities;
 
 namespace TraderVoyages.Application.DTOs
@@ -12,7 +11,6 @@ namespace TraderVoyages.Application.DTOs
         public int Player1Id { get; set; }
         public int Player2Id { get; set; }
         public int TurnId { get; set; }
-
         public Player Player1 { get; set; }
         public Player Player2 { get; set; }
     }
