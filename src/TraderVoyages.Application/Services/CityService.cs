@@ -15,61 +15,67 @@ namespace TraderVoyages.Application.Services
             _context = context;
         }
 
-        public List<City> GetCities()
+        public List<CityDto> GetCities()
         {
 
-            return _context.Cities.ToList();
+            return _context.Cities.Select(c => new CityDto
+            {
+                CityID = c.CityID,
+                Name = c.Name,
+            }).ToList();
         }
 
 
-        public List<CityGoods> GetCitiesGoods()
+        public List<CitiesWithGoodsDTO> GetCitiesGoods()
         {
-            List<City> cities;
-            List<CityGood> cityGoods;
+            var cityGoodsList = _context.CityGoods
+                                    .Include(cg => cg.City)
+                                    .Include(cg => cg.Good)
+                                    .ToList();
 
-            cities = _context.Cities.ToList();
-            cityGoods = _context.CityGoods
-                .Include(cg => cg.Good)
-                .ToList();
-            var result = cities.Select(city => new CityGoods
-            {
-                CityID = city.CityID,
-                CityName = city.Name,
-                Goods = cityGoods.Where(cg => cg.CityID == city.CityID).Select(cg => new GoodPrice
-                {
-                    GoodID = cg.GoodID,
-                    GoodName = cg.Good.Name,
-                    PurchasePrice = cg.PurchasePrice,
-                    SalePrice = cg.SalePrice
-                }).ToList()
-            }).ToList();
+            var result = cityGoodsList.GroupBy(cg => cg.CityID)
+                                      .Select(cg => new CitiesWithGoodsDTO
+                                      {
+                                          CityID = cg.Key,
+                                          CityName = cg.First().City.Name,
+                                          Goods = cg.Select(g => new GoodPriceDTO
+                                          {
+                                              GoodID = g.GoodID,
+                                              GoodName = g.Good.Name,
+                                              PurchasePrice = g.PurchasePrice,
+                                              SalePrice = g.SalePrice,
+                                              Quantity = g.Quantity
+                                          }).ToList()
+                                      }).ToList();
 
             return result;
         }
 
-        public List<CityGoods> GetCityGoods(int cityId)
+        public List<GoodsOfCityDTO> GetCityGoods(int cityId)
         {
-            List<City> cities;
-            List<CityGood> cityGoods;
+            var cityGoodsList = _context.CityGoods
+                                    .Include(cg => cg.City)
+                                    .Include(cg => cg.Good)
+                                    .Where(cg => cg.CityID == cityId)
+                                    .ToList();
 
-            cities = _context.Cities.ToList();
-            cityGoods = _context.CityGoods
-                .Include(cg => cg.Good)
-                .ToList();
-            var result = cities.Where(c => c.CityID == cityId).Select(city => new CityGoods
-            {
-                CityID = city.CityID,
-                CityName = city.Name,
-                Goods = cityGoods.Where(cg => cg.CityID == city.CityID).Select(cg => new GoodPrice
-                {
-                    GoodID = cg.GoodID,
-                    GoodName = cg.Good.Name,
-                    PurchasePrice = cg.PurchasePrice,
-                    SalePrice = cg.SalePrice
-                }).ToList()
-            }).ToList();
+            var result = cityGoodsList.GroupBy(cg => cg.CityID)
+                                      .Select(cg => new GoodsOfCityDTO
+                                      {
+                                          CityID = cg.Key,
+                                          CityName = cg.First().City.Name,
+                                          Goods = cg.Select(g => new GoodPriceDTO
+                                          {
+                                              GoodID = g.GoodID,
+                                              GoodName = g.Good.Name,
+                                              PurchasePrice = g.PurchasePrice,
+                                              SalePrice = g.SalePrice,
+                                              Quantity = g.Quantity
+                                          }).ToList()
+                                      }).ToList();
 
             return result;
         }
+
     }
 }

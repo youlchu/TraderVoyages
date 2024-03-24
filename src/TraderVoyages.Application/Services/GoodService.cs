@@ -18,5 +18,7 @@ namespace TraderVoyages.Application.Services
         {
             return _context.Goods.ToList();
         }
+
+
     }
 }

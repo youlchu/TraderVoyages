@@ -5,7 +5,6 @@ namespace TraderVoyages.Application.DTOs
     {
 
         public string Name { get; set; }
-        public int TotalCount { get; set; }
         public int Weight { get; set; }
     }
 }

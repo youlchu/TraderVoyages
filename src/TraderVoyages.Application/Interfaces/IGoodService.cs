@@ -6,5 +6,6 @@ namespace TraderVoyages.Application.Interfaces
     public interface IGoodService
     {
         List<Good> GetGoods();
+
     }
 }

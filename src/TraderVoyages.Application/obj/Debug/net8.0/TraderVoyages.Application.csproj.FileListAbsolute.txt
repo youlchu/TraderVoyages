@@ -15,3 +15,4 @@ D:\project\TraderVoyages\src\TraderVoyages.Application\obj\Debug\net8.0\TraderVo
 D:\project\TraderVoyages\src\TraderVoyages.Application\obj\Debug\net8.0\ref\TraderVoyages.Application.dll
 D:\project\TraderVoyages\src\TraderVoyages.Application\bin\Debug\net8.0\TraderVoyages.Infrastructure.dll
 D:\project\TraderVoyages\src\TraderVoyages.Application\bin\Debug\net8.0\TraderVoyages.Infrastructure.pdb
+D:\project\TraderVoyages\src\TraderVoyages.Application\obj\Debug\net8.0\TraderVoyages.Application.sourcelink.json

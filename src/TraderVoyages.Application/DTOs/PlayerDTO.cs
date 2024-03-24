@@ -16,7 +16,6 @@ namespace TraderVoyages.Application.DTOs
     public class CreatePlayerDto
     {
         public string Name { get; set; }
-        // public decimal Money { get; set; }
         public int CurrentCityID { get; set; }
         public int MountTypeID { get; set; }
 

@@ -9,3 +9,4 @@ D:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\TraderVoyages
 D:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\refint\TraderVoyages.Domain.dll
 D:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\TraderVoyages.Domain.pdb
 D:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\ref\TraderVoyages.Domain.dll
+D:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\TraderVoyages.Domain.sourcelink.json

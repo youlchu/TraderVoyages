@@ -15,3 +15,4 @@ D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\obj\Debug\net8.0\refin
 D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\obj\Debug\net8.0\TraderVoyages.Infrastructure.pdb
 D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\obj\Debug\net8.0\TraderVoyages.Infrastructure.genruntimeconfig.cache
 D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\obj\Debug\net8.0\ref\TraderVoyages.Infrastructure.dll
+D:\project\TraderVoyages\src\TraderVoyages.Infrastructure\obj\Debug\net8.0\TraderVoyages.Infrastructure.sourcelink.json

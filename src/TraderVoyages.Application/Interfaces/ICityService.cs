@@ -6,9 +6,9 @@ namespace TraderVoyages.Application.Interfaces
 {
     public interface ICityService
     {
-        List<City> GetCities();
-        List<CityGoods> GetCitiesGoods();
-        List<CityGoods> GetCityGoods(int cityId);
+        List<CityDto> GetCities();
+        List<CitiesWithGoodsDTO> GetCitiesGoods();
+        List<GoodsOfCityDTO> GetCityGoods(int cityId);
 
     }
 }
