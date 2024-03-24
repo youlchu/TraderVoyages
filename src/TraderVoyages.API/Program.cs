@@ -21,6 +21,8 @@ builder.Services.AddScoped<IPlayerService, PlayerService>();
 builder.Services.AddScoped<IMountTypeService, MountTypeService>();
 builder.Services.AddScoped<ICityService, CityService>();
 builder.Services.AddScoped<IGoodService, GoodService>();
+builder.Services.AddScoped<IGameService, GameService>();
+
 
 
 var app = builder.Build();
