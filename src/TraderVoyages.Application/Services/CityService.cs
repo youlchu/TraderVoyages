@@ -1,37 +1,43 @@
 using Microsoft.EntityFrameworkCore;
 using TraderVoyages.Application.DTOs;
 using TraderVoyages.Application.Interfaces;
-using TraderVoyages.Domain.Entities;
-using TraderVoyages.Infrastructure.Data;
+using TraderVoyages.Domain.Repository;
+
 
 namespace TraderVoyages.Application.Services
 {
     public class CityService : ICityService
     {
-        private readonly ApplicationDbContext _context;
-
-        public CityService(ApplicationDbContext context)
+        private readonly ICityRepository _cityRepository;
+        private readonly IGoodRepository _goodRepository;
+        private readonly ICityGoodRepository _cityGoodRepository;
+        public CityService(ICityRepository cityRepository, IGoodRepository goodRepository, ICityGoodRepository cityGoodRepository
+        )
         {
-            _context = context;
+            _cityRepository = cityRepository;
+            _goodRepository = goodRepository;
+            _cityGoodRepository = cityGoodRepository;
         }
 
         public List<CityDto> GetCities()
         {
 
-            return _context.Cities.Select(c => new CityDto
+            var cities = _cityRepository.GetAllCities();
+            return cities.Select(c => new CityDto
             {
                 CityID = c.CityID,
                 Name = c.Name,
+                XCoordinate = c.XCoordinate,
+                YCoordinate = c.YCoordinate
             }).ToList();
         }
 
-
         public List<CitiesWithGoodsDTO> GetCitiesGoods()
         {
-            var cityGoodsList = _context.CityGoods
-                                    .Include(cg => cg.City)
-                                    .Include(cg => cg.Good)
-                                    .ToList();
+
+            var cityGoodsList = _cityGoodRepository.GetCityGoods();
+
+
 
             var result = cityGoodsList.GroupBy(cg => cg.CityID)
                                       .Select(cg => new CitiesWithGoodsDTO
@@ -47,17 +53,40 @@ namespace TraderVoyages.Application.Services
                                               Quantity = g.Quantity
                                           }).ToList()
                                       }).ToList();
-
             return result;
+
+
+
+
+            //   var cityGoodsList = _context.CityGoods
+            //                         .Include(cg => cg.City)
+            //                         .Include(cg => cg.Good)
+            //                         .ToList();
+
+            // var result = cityGoodsList.GroupBy(cg => cg.CityID)
+            //                           .Select(cg => new CitiesWithGoodsDTO
+            //                           {
+            //                               CityID = cg.Key,
+            //                               CityName = cg.First().City.Name,
+            //                               Goods = cg.Select(g => new GoodPriceDTO
+            //                               {
+            //                                   GoodID = g.GoodID,
+            //                                   GoodName = g.Good.Name,
+            //                                   PurchasePrice = g.PurchasePrice,
+            //                                   SalePrice = g.SalePrice,
+            //                                   Quantity = g.Quantity
+            //                               }).ToList()
+            //                           }).ToList();
+
+            // return result;
         }
 
         public List<GoodsOfCityDTO> GetCityGoods(int cityId)
         {
-            var cityGoodsList = _context.CityGoods
-                                    .Include(cg => cg.City)
-                                    .Include(cg => cg.Good)
-                                    .Where(cg => cg.CityID == cityId)
-                                    .ToList();
+            var cities = _cityRepository.GetAllCities();
+            var goods = _goodRepository.GetAllGoods();
+
+            var cityGoodsList = _cityGoodRepository.GetCityGoods(cityId);
 
             var result = cityGoodsList.GroupBy(cg => cg.CityID)
                                       .Select(cg => new GoodsOfCityDTO
@@ -73,9 +102,17 @@ namespace TraderVoyages.Application.Services
                                               Quantity = g.Quantity
                                           }).ToList()
                                       }).ToList();
-
             return result;
         }
 
+        public CityDto GetCityById(int cityId)
+        {
+            var city = _cityRepository.GetCityById(cityId);
+            return new CityDto
+            {
+                CityID = city.CityID,
+                Name = city.Name,
+            };
+        }
     }
 }

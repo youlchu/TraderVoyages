@@ -24,8 +24,6 @@ namespace TraderVoyages.API.Controllers
         }
 
         [HttpGet("Goods")]
-
-
         public ActionResult<string> GetCitiesGoods()
         {
             var citiesGoods = _cityService.GetCitiesGoods();
@@ -33,7 +31,6 @@ namespace TraderVoyages.API.Controllers
         }
 
 
-        // good with city id 
         [HttpGet("Goods/{cityId}")]
         public ActionResult<string> GetCityGoods(int cityId)
         {

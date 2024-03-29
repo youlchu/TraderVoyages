@@ -60,7 +60,6 @@ namespace TraderVoyages.Infrastructure.Data
                 .Property(b => b.Money)
                 .HasPrecision(18, 2);
 
-            // PlayerGood ilişkisini tanımla
             modelBuilder.Entity<PlayerGood>()
                 .HasKey(pg => new { pg.PlayerID, pg.GoodID });
 
@@ -86,13 +85,14 @@ namespace TraderVoyages.Infrastructure.Data
                 .HasOne<Player>(g => g.Player1)
                 .WithMany()
                 .HasForeignKey(g => g.Player1Id)
-                .OnDelete(DeleteBehavior.NoAction); // Oyuncu silindiğinde oyun silinmez
+                .OnDelete(DeleteBehavior.NoAction);
+
 
             modelBuilder.Entity<Game>()
                 .HasOne<Player>(g => g.Player2)
                 .WithMany()
                 .HasForeignKey(g => g.Player2Id)
-                .OnDelete(DeleteBehavior.NoAction); // Oyuncu silindiğinde oyun silinmez
+                .OnDelete(DeleteBehavior.NoAction);
 
         }
     }

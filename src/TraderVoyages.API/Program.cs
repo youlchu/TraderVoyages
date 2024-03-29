@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using TraderVoyages.Application.Interfaces;
 using TraderVoyages.Application.Services;
+using TraderVoyages.Domain.Repository;
 using TraderVoyages.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,7 +24,9 @@ builder.Services.AddScoped<ICityService, CityService>();
 builder.Services.AddScoped<IGoodService, GoodService>();
 builder.Services.AddScoped<IGameService, GameService>();
 
-
+builder.Services.AddScoped<ICityRepository, CityRepository>();
+builder.Services.AddScoped<IGoodRepository, GoodRepository>();
+builder.Services.AddScoped<ICityGoodRepository, CityGoodRepository>();
 
 var app = builder.Build();
 
