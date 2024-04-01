@@ -10,9 +10,12 @@ function App() {
         <Route
           path="/game"
           element={
-            <h1 className="min-h-screen bg-black text-white font-sans">
-              Welcome to Trader Voyages UI
-            </h1>
+            <div className="flex justify-center items-center h-screen">
+               <h1 className="bg-black text-white  pb-5 font-sans zoomAndFocus">
+                Welcome to Trader Voyages UI
+              </h1>
+           </div>
+
           }
         />
       </Routes>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import Dropdown from "../../components/Dropdown";
@@ -24,6 +24,18 @@ const Home: React.FC = () => {
     animal: Yup.string().required("Binek hayvanı zorunludur"),
   });
 
+  useEffect(() => {
+    if (isSubmittedPlayer1 && isSubmittedPlayer2) {
+      setStartAnimation(true);
+      setTimeout(() => {
+        navigate("/game");
+      }, 2300);
+      setSlideAnimation(true); 
+
+    }
+  } , [isSubmittedPlayer1, isSubmittedPlayer2]);
+
+
   const onSubmit =
     (playerNumber: number) =>
     (
@@ -39,7 +51,6 @@ const Home: React.FC = () => {
     ) => {
       actions.setFieldTouched("userName", true, false);
       actions.setFieldTouched("animal", true, false);
-      console.log(values);
 
       if (playerNumber === 1) {
         setIsSubmittedPlayer1(true);
@@ -47,13 +58,7 @@ const Home: React.FC = () => {
         setIsSubmittedPlayer2(true);
       }
 
-      if (isSubmittedPlayer1 && isSubmittedPlayer2) {
-        setStartAnimation(true);
-        setTimeout(() => {
-          navigate("/game");
-        }, 3000);
-        setSlideAnimation(true); // Animasyonu başlat
-      }
+    
     };
 
   return (
