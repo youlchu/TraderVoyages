@@ -14,7 +14,7 @@ const Home: React.FC = () => {
   const [isSubmittedPlayer1, setIsSubmittedPlayer1] = useState(false);
   const [isSubmittedPlayer2, setIsSubmittedPlayer2] = useState(false);
   const [startAnimation, setStartAnimation] = useState(false);
-
+  const [slideAnimation, setSlideAnimation] = useState(false);
   const items = ["At", "Deve", "Fil"];
 
   const PlayerSchema = Yup.object().shape({
@@ -51,7 +51,8 @@ const Home: React.FC = () => {
         setStartAnimation(true);
         setTimeout(() => {
           navigate("/game");
-        }, 3000); // Animasyon süresiyle eşleşen zaman aşımı
+        }, 3000);
+        setSlideAnimation(true); // Animasyonu başlat
       }
     };
 
@@ -61,11 +62,15 @@ const Home: React.FC = () => {
         startAnimation ? "mergeAndFade" : ""
       }`}
     >
-      <div className="absolute logo top-0 left-0 right-0 flex justify-center items-center">
+      <div className="absolute logo top-0 left-0 right-0 flex justify-center items-center ">
         <img src="src\assets\images\logo.webp" alt="logo" />
       </div>
-
-      <div className="w-1/2 flex flex-col justify-center items-center h-full border-dotted border-r-2 border-gray-900">
+      <div
+        className={`w-1/2 flex flex-col justify-center items-center   border-dotted  border-gray-900 ${
+          slideAnimation ? "mergeAndSlideRight" : ""
+        }`}
+      >
+        
         <div className="relative p-6 border-2 border-gray-900">
           <div className="border-dark-edge-left" />
           <h1 className="text-2xl font-bold mb-4">Oyuncu 1</h1>
@@ -73,6 +78,7 @@ const Home: React.FC = () => {
             initialValues={{ userName: "", animal: "" }}
             validationSchema={PlayerSchema}
             onSubmit={onSubmit(1)}
+            
           >
             {(formProps) => (
               <Form className="flex flex-col items-center">
@@ -120,8 +126,11 @@ const Home: React.FC = () => {
           </Formik>
         </div>
       </div>
-
-      <div className="w-1/2 flex flex-col justify-center items-center h-full border-dotted border-r-2 border-gray-900">
+      <div
+        className={`w-1/2 flex flex-col justify-center items-center  border-dotted border-gray-900 ${
+          slideAnimation ? "mergeAndSlideLeft" : ""
+        }`}
+      >
         <div className="relative p-6 border-2 border-gray-900">
           <div className="border-dark-edge-right" />
           <h1 className="text-2xl font-bold mb-4">Oyuncu 2</h1>

@@ -69,18 +69,41 @@
 @keyframes mergeAndFade {
   0% {
     opacity: 1;
+    background-color: red;
     transform: translateX(0);
   }
-  50% {
-    opacity: 0.5;
-    transform: translateX(calc(-50vw + 50%));
-  }
+  
   100% {
     opacity: 0;
+    background-color: red;
     transform: translateX(calc(-50vw + 50%));
+  }
+}
+@keyframes mergeAndSlideRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(50%);
+  }
+}
+@keyframes mergeAndSlideLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
   }
 }
 
 .mergeAndFade {
-  animation: mergeAndFade 3s forwards;
+  animation: mergeAndFade 1.2s ease-out forwards;
+}
+.mergeAndSlideRight {
+  animation: mergeAndSlideRight 2.3s forwards;
+}
+.mergeAndSlideLeft {
+  animation: mergeAndSlideLeft 2.3s forwards;
 }
