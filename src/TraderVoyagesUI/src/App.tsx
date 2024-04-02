@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./sections/Home";
+import Game from "./sections/Game";
 
 function App() {
   return (
@@ -9,14 +10,7 @@ function App() {
         <Route path="/" element=<Home /> />
         <Route
           path="/game"
-          element={
-            <div className="flex justify-center items-center h-screen">
-               <h1 className="bg-black text-white  pb-5 font-sans zoomAndFocus">
-                Welcome to Trader Voyages UI
-              </h1>
-           </div>
-
-          }
+          element=<Game />
         />
       </Routes>
     </BrowserRouter>

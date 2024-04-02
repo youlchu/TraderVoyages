@@ -120,3 +120,51 @@
 .mergeAndSlideLeft {
   animation: mergeAndSlideLeft 2.3s forwards;
 }
+
+.heroDiv {
+  background-color:rgba(66, 61, 61, 0.274);
+  position: fixed;
+  width: 80vw;
+  height: 40vw;
+  top: 6%;
+  right: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+.heroDiv2 {
+  background-color: rgba(66, 61, 61, 0.274);
+  position: fixed;
+  width: 80vw;
+  height: 40vw;
+  top: 6%;
+  right: 0%;
+  display: flex;
+}
+
+
+.innerDiv {
+  flex-basis: calc(100% / 1);
+  display: flex;
+  justify-content: left;
+  align-items: left; 
+  color: rgb(236, 227, 227);
+  line-height: 0px;
+}
+
+
+
+.innerDiv::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: gray;
+}
+
+
+
+.outerDiv {
+  flex-grow: 1;
+  border: 1px solid gray;
+
+}

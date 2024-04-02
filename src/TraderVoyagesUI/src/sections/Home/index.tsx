@@ -63,7 +63,7 @@ const Home: React.FC = () => {
 
   return (
     <div
-      className={`flex justify-center items-center h-screen ${
+      className={`flex justify-center items-center h-screen bg-black text-white ${
         startAnimation ? "mergeAndFade" : ""
       }`}
     >
