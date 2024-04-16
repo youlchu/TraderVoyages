@@ -70,7 +70,7 @@
     opacity: 0;
     font-size: 10px;
   }
-  
+
   100% {
     opacity: 1;
     font-size: 40px;
@@ -83,7 +83,7 @@
     background-color: red;
     transform: translateX(0);
   }
-  
+
   100% {
     opacity: 0;
     background-color: red;
@@ -122,7 +122,7 @@
 }
 
 .heroDiv {
-  background-color:rgba(66, 61, 61, 0.274);
+  background-color: rgba(66, 61, 61, 0.274);
   position: fixed;
   width: 80vw;
   height: 40vw;
@@ -142,17 +142,14 @@
   display: flex;
 }
 
-
 .innerDiv {
   flex-basis: calc(100% / 1);
   display: flex;
   justify-content: left;
-  align-items: left; 
+  align-items: left;
   color: rgb(236, 227, 227);
   line-height: 0px;
 }
-
-
 
 .innerDiv::after {
   content: "";
@@ -161,10 +158,46 @@
   background-color: gray;
 }
 
-
-
 .outerDiv {
   flex-grow: 1;
   border: 1px solid gray;
+}
 
+#colnum {
+  position: fixed;
+  font-size: 6px;
+  top: 2%;
+  left: 17.5%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  color: #ccc;
+  border-collapse: separate;
+  border-spacing: 10px;
+  margin-bottom: 19px;
+}
+
+.row-container {
+  margin-bottom: 10px; /* Satırlar arasındaki boşluğu ayarlar */
+}
+
+.elephant {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  z-index: 2;
+}
+.horse {
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  z-index: 2;
+}
+
+.table-row {
+  margin-bottom: 100px;
 }
