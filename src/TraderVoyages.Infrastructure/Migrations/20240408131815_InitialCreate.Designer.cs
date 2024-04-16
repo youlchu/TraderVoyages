@@ -12,8 +12,8 @@ using TraderVoyages.Infrastructure.Data;
 namespace TraderVoyages.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240324012215_StartDb")]
-    partial class StartDb
+    [Migration("20240408131815_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,6 +44,10 @@ namespace TraderVoyages.Infrastructure.Migrations
 
                     b.Property<DateTime>("StartTime")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("TurnId")
                         .HasColumnType("int");
@@ -187,7 +191,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 1,
                             CityGoodID = 1,
                             PurchasePrice = 20m,
-                            Quantity = 188,
+                            Quantity = 151,
                             SalePrice = 25m
                         },
                         new
@@ -196,7 +200,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 2,
                             CityGoodID = 2,
                             PurchasePrice = 30m,
-                            Quantity = 159,
+                            Quantity = 158,
                             SalePrice = 35m
                         },
                         new
@@ -205,7 +209,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 3,
                             CityGoodID = 3,
                             PurchasePrice = 25m,
-                            Quantity = 122,
+                            Quantity = 142,
                             SalePrice = 30m
                         },
                         new
@@ -214,7 +218,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 4,
                             CityGoodID = 4,
                             PurchasePrice = 15m,
-                            Quantity = 156,
+                            Quantity = 167,
                             SalePrice = 20m
                         },
                         new
@@ -223,7 +227,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 1,
                             CityGoodID = 5,
                             PurchasePrice = 22m,
-                            Quantity = 143,
+                            Quantity = 107,
                             SalePrice = 27m
                         },
                         new
@@ -232,7 +236,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 2,
                             CityGoodID = 6,
                             PurchasePrice = 32m,
-                            Quantity = 168,
+                            Quantity = 162,
                             SalePrice = 37m
                         },
                         new
@@ -241,7 +245,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 3,
                             CityGoodID = 7,
                             PurchasePrice = 27m,
-                            Quantity = 115,
+                            Quantity = 105,
                             SalePrice = 32m
                         },
                         new
@@ -250,7 +254,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 4,
                             CityGoodID = 8,
                             PurchasePrice = 17m,
-                            Quantity = 115,
+                            Quantity = 176,
                             SalePrice = 22m
                         },
                         new
@@ -259,7 +263,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 1,
                             CityGoodID = 9,
                             PurchasePrice = 24m,
-                            Quantity = 147,
+                            Quantity = 140,
                             SalePrice = 29m
                         },
                         new
@@ -268,7 +272,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 2,
                             CityGoodID = 10,
                             PurchasePrice = 34m,
-                            Quantity = 117,
+                            Quantity = 141,
                             SalePrice = 39m
                         },
                         new
@@ -277,7 +281,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 3,
                             CityGoodID = 11,
                             PurchasePrice = 29m,
-                            Quantity = 193,
+                            Quantity = 151,
                             SalePrice = 34m
                         },
                         new
@@ -295,7 +299,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 1,
                             CityGoodID = 13,
                             PurchasePrice = 26m,
-                            Quantity = 182,
+                            Quantity = 115,
                             SalePrice = 31m
                         },
                         new
@@ -304,7 +308,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 2,
                             CityGoodID = 14,
                             PurchasePrice = 36m,
-                            Quantity = 142,
+                            Quantity = 155,
                             SalePrice = 41m
                         },
                         new
@@ -313,7 +317,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 3,
                             CityGoodID = 15,
                             PurchasePrice = 31m,
-                            Quantity = 136,
+                            Quantity = 197,
                             SalePrice = 36m
                         },
                         new
@@ -322,7 +326,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 4,
                             CityGoodID = 16,
                             PurchasePrice = 21m,
-                            Quantity = 176,
+                            Quantity = 109,
                             SalePrice = 26m
                         },
                         new
@@ -331,7 +335,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 1,
                             CityGoodID = 17,
                             PurchasePrice = 28m,
-                            Quantity = 138,
+                            Quantity = 110,
                             SalePrice = 33m
                         },
                         new
@@ -340,7 +344,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 2,
                             CityGoodID = 18,
                             PurchasePrice = 38m,
-                            Quantity = 149,
+                            Quantity = 185,
                             SalePrice = 43m
                         },
                         new
@@ -349,7 +353,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 3,
                             CityGoodID = 19,
                             PurchasePrice = 33m,
-                            Quantity = 103,
+                            Quantity = 169,
                             SalePrice = 38m
                         },
                         new
@@ -358,7 +362,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 4,
                             CityGoodID = 20,
                             PurchasePrice = 23m,
-                            Quantity = 128,
+                            Quantity = 145,
                             SalePrice = 28m
                         },
                         new
@@ -367,7 +371,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 1,
                             CityGoodID = 21,
                             PurchasePrice = 30m,
-                            Quantity = 180,
+                            Quantity = 133,
                             SalePrice = 35m
                         },
                         new
@@ -376,7 +380,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 2,
                             CityGoodID = 22,
                             PurchasePrice = 40m,
-                            Quantity = 166,
+                            Quantity = 120,
                             SalePrice = 45m
                         },
                         new
@@ -385,7 +389,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 3,
                             CityGoodID = 23,
                             PurchasePrice = 35m,
-                            Quantity = 163,
+                            Quantity = 188,
                             SalePrice = 40m
                         },
                         new
@@ -394,7 +398,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 4,
                             CityGoodID = 24,
                             PurchasePrice = 25m,
-                            Quantity = 160,
+                            Quantity = 149,
                             SalePrice = 30m
                         },
                         new
@@ -403,7 +407,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 1,
                             CityGoodID = 25,
                             PurchasePrice = 32m,
-                            Quantity = 152,
+                            Quantity = 113,
                             SalePrice = 37m
                         },
                         new
@@ -412,7 +416,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 2,
                             CityGoodID = 26,
                             PurchasePrice = 42m,
-                            Quantity = 199,
+                            Quantity = 104,
                             SalePrice = 47m
                         },
                         new
@@ -421,7 +425,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 3,
                             CityGoodID = 27,
                             PurchasePrice = 37m,
-                            Quantity = 113,
+                            Quantity = 100,
                             SalePrice = 42m
                         },
                         new
@@ -430,7 +434,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 4,
                             CityGoodID = 28,
                             PurchasePrice = 27m,
-                            Quantity = 197,
+                            Quantity = 199,
                             SalePrice = 32m
                         },
                         new
@@ -439,7 +443,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 1,
                             CityGoodID = 29,
                             PurchasePrice = 34m,
-                            Quantity = 121,
+                            Quantity = 198,
                             SalePrice = 39m
                         },
                         new
@@ -448,7 +452,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 2,
                             CityGoodID = 30,
                             PurchasePrice = 44m,
-                            Quantity = 178,
+                            Quantity = 190,
                             SalePrice = 49m
                         },
                         new
@@ -457,7 +461,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 3,
                             CityGoodID = 31,
                             PurchasePrice = 39m,
-                            Quantity = 140,
+                            Quantity = 200,
                             SalePrice = 44m
                         },
                         new
@@ -466,7 +470,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 4,
                             CityGoodID = 32,
                             PurchasePrice = 29m,
-                            Quantity = 112,
+                            Quantity = 115,
                             SalePrice = 34m
                         },
                         new
@@ -475,7 +479,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 1,
                             CityGoodID = 33,
                             PurchasePrice = 36m,
-                            Quantity = 181,
+                            Quantity = 116,
                             SalePrice = 41m
                         },
                         new
@@ -484,7 +488,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 2,
                             CityGoodID = 34,
                             PurchasePrice = 46m,
-                            Quantity = 114,
+                            Quantity = 163,
                             SalePrice = 51m
                         },
                         new
@@ -493,7 +497,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 3,
                             CityGoodID = 35,
                             PurchasePrice = 41m,
-                            Quantity = 154,
+                            Quantity = 155,
                             SalePrice = 46m
                         },
                         new
@@ -502,7 +506,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 4,
                             CityGoodID = 36,
                             PurchasePrice = 31m,
-                            Quantity = 131,
+                            Quantity = 127,
                             SalePrice = 36m
                         },
                         new
@@ -511,7 +515,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 1,
                             CityGoodID = 37,
                             PurchasePrice = 38m,
-                            Quantity = 139,
+                            Quantity = 101,
                             SalePrice = 43m
                         },
                         new
@@ -520,7 +524,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 2,
                             CityGoodID = 38,
                             PurchasePrice = 48m,
-                            Quantity = 194,
+                            Quantity = 150,
                             SalePrice = 53m
                         },
                         new
@@ -529,7 +533,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 3,
                             CityGoodID = 39,
                             PurchasePrice = 43m,
-                            Quantity = 152,
+                            Quantity = 134,
                             SalePrice = 48m
                         },
                         new
@@ -538,7 +542,7 @@ namespace TraderVoyages.Infrastructure.Migrations
                             GoodID = 4,
                             CityGoodID = 40,
                             PurchasePrice = 33m,
-                            Quantity = 139,
+                            Quantity = 181,
                             SalePrice = 38m
                         });
                 });

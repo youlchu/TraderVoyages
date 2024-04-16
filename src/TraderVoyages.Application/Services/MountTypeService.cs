@@ -1,3 +1,4 @@
+using TraderVoyages.Application.DTOs;
 using TraderVoyages.Application.Interfaces;
 using TraderVoyages.Domain.Entities;
 using TraderVoyages.Infrastructure.Data;
@@ -11,8 +12,13 @@ public class MountTypeService : IMountTypeService
         _context = context;
     }
 
-    public IEnumerable<MountType> GetMountTypes()
+    public IEnumerable<MountTypeDTO> GetMountTypes()
     {
-        return _context.MountTypes.ToList();
+        return _context.MountTypes.Select(m => new MountTypeDTO
+        {
+            Name = m.Name,
+            CarryCapacity = m.CarryCapacity,
+            StepCapacity = m.StepCapacity
+        }).ToList();
     }
 }

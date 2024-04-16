@@ -10,3 +10,15 @@ D:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\refint\Trader
 D:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\TraderVoyages.Domain.pdb
 D:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\ref\TraderVoyages.Domain.dll
 D:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\TraderVoyages.Domain.sourcelink.json
+A:\project\TraderVoyages\src\TraderVoyages.Domain\bin\Debug\net8.0\TraderVoyages.Domain.deps.json
+A:\project\TraderVoyages\src\TraderVoyages.Domain\bin\Debug\net8.0\TraderVoyages.Domain.dll
+A:\project\TraderVoyages\src\TraderVoyages.Domain\bin\Debug\net8.0\TraderVoyages.Domain.pdb
+A:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\TraderVoyages.Domain.GeneratedMSBuildEditorConfig.editorconfig
+A:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\TraderVoyages.Domain.AssemblyInfoInputs.cache
+A:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\TraderVoyages.Domain.AssemblyInfo.cs
+A:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\TraderVoyages.Domain.csproj.CoreCompileInputs.cache
+A:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\TraderVoyages.Domain.sourcelink.json
+A:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\TraderVoyages.Domain.dll
+A:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\refint\TraderVoyages.Domain.dll
+A:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\TraderVoyages.Domain.pdb
+A:\project\TraderVoyages\src\TraderVoyages.Domain\obj\Debug\net8.0\ref\TraderVoyages.Domain.dll

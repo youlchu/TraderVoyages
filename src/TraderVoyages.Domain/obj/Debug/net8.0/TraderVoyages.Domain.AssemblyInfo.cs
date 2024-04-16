@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TraderVoyages.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26fbb23b3bfb4436712759674241467e038c1b3a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1fb1d2888169519b3d46d8bad842238079ba695")]
 [assembly: System.Reflection.AssemblyProductAttribute("TraderVoyages.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TraderVoyages.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

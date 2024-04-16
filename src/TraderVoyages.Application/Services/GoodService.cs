@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TraderVoyages.Application.DTOs;
 using TraderVoyages.Application.Interfaces;
 using TraderVoyages.Domain.Entities;
 using TraderVoyages.Infrastructure.Data;
@@ -14,9 +15,13 @@ namespace TraderVoyages.Application.Services
             _context = context;
         }
 
-        public List<Good> GetGoods()
+        public List<GoodDto> GetGoods()
         {
-            return _context.Goods.ToList();
+            return _context.Goods.Select(g => new GoodDto
+            {
+                Name = g.Name,
+                Weight = g.Weight
+            }).ToList();
         }
 
 

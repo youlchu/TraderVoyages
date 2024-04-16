@@ -7,7 +7,7 @@ const Game: React.FC = () => {
   return (
     <div className="bg-black  h-screen ">
                 <GameMap />
-                </div>
+    </div>
   );
 };
 

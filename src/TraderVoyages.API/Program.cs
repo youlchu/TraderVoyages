@@ -28,6 +28,7 @@ builder.Services.AddScoped<ICityRepository, CityRepository>();
 builder.Services.AddScoped<IGoodRepository, GoodRepository>();
 builder.Services.AddScoped<ICityGoodRepository, CityGoodRepository>();
 
+
 var app = builder.Build();
 
 // Geliştirme ortamında ise Swagger UI kullanımını etkinleştir
@@ -38,6 +39,12 @@ if (app.Environment.IsDevelopment())
     {
         c.DocExpansion(Swashbuckle.AspNetCore.SwaggerUI.DocExpansion.None);
     });
+}
+
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    dbContext.Database.Migrate();
 }
 
 // HTTPS yönlendirmesini ve Controller'ları kullan

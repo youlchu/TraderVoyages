@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NJx6vsfFSXE7FiUI0hC5go6dNdjqb+DA3e7TeRzaIEGytBG5VcxpDO/txXnTot8oha6Nc6Vy42EWVEpYy2pxGA==",
+  "dgSpecHash": "k+U3sZTlq9CtjZeji02P3TgGXgzuSo2AatffHdgJfl94M2OkRpwbZU8eKZzffFvlFZvjFbl23xWcE81ST/JB/Q==",
   "success": true,
-  "projectFilePath": "D:\\project\\TraderVoyages\\src\\TraderVoyages.Infrastructure\\TraderVoyages.Infrastructure.csproj",
+  "projectFilePath": "A:\\project\\TraderVoyages\\src\\TraderVoyages.Infrastructure\\TraderVoyages.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\YusufYolcu\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\YusufYolcu\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

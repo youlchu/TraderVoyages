@@ -54,31 +54,6 @@ namespace TraderVoyages.Application.Services
                                           }).ToList()
                                       }).ToList();
             return result;
-
-
-
-
-            //   var cityGoodsList = _context.CityGoods
-            //                         .Include(cg => cg.City)
-            //                         .Include(cg => cg.Good)
-            //                         .ToList();
-
-            // var result = cityGoodsList.GroupBy(cg => cg.CityID)
-            //                           .Select(cg => new CitiesWithGoodsDTO
-            //                           {
-            //                               CityID = cg.Key,
-            //                               CityName = cg.First().City.Name,
-            //                               Goods = cg.Select(g => new GoodPriceDTO
-            //                               {
-            //                                   GoodID = g.GoodID,
-            //                                   GoodName = g.Good.Name,
-            //                                   PurchasePrice = g.PurchasePrice,
-            //                                   SalePrice = g.SalePrice,
-            //                                   Quantity = g.Quantity
-            //                               }).ToList()
-            //                           }).ToList();
-
-            // return result;
         }
 
         public List<GoodsOfCityDTO> GetCityGoods(int cityId)

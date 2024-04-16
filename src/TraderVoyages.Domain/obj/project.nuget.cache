@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3cw+yVvRcNHMF8C0wEaS9+kJnsufjDw9nm8yL2kjry4IrBBEAedkkzz2QEv03myL62LQjJMVwzDZ53Z6mbkS3A==",
+  "dgSpecHash": "GQNz+H6fDLZ1Udz6+pbpns2ofIqVe6GDsdeQZk15/FmiotGue47oNIxMzAohC6SRNRbbRgj3mT9bwxESFA1lYg==",
   "success": true,
-  "projectFilePath": "D:\\project\\TraderVoyages\\src\\TraderVoyages.Domain\\TraderVoyages.Domain.csproj",
+  "projectFilePath": "A:\\project\\TraderVoyages\\src\\TraderVoyages.Domain\\TraderVoyages.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
