@@ -1,4 +1,4 @@
-function KoordinatTablosu({ rows = 20, columns = 40 }) {
+function GameMap({ rows = 18, columns = 60 }) {
   const tabloVerileri = [];
   for (let y = 0; y < rows; y++) {
     const satir = [];
@@ -9,10 +9,29 @@ function KoordinatTablosu({ rows = 20, columns = 40 }) {
   }
 
   const satirlar = tabloVerileri.map((satir, rowIndex) => (
-    <div key={rowIndex} style={{ marginBottom: "5px" }}>
+    <div
+      key={rowIndex}
+      style={{
+        marginBottom: "5px",
+        color: "red",
+      }}
+    >
       <tr>
         {satir.map((hucre, colIndex) => (
-          <td key={colIndex}>{hucre}</td>
+          <td key={colIndex}>
+            <img
+              src="/src/assets/images/horse-real.png"
+              alt={hucre}
+              style={{
+                width: "30px",
+                height: "30px",
+                position: "absolute",
+                top: "0px",
+                left: "0px",
+              }}
+            />
+            resim
+          </td>
         ))}
       </tr>
     </div>
@@ -27,7 +46,6 @@ function KoordinatTablosu({ rows = 20, columns = 40 }) {
     <>
       <div>
         <table id="colnum">
-          <thead></thead>
           <div>
             <tbody>{satirlar}</tbody>
           </div>
@@ -37,4 +55,4 @@ function KoordinatTablosu({ rows = 20, columns = 40 }) {
   );
 }
 
-export default KoordinatTablosu;
+export default GameMap;

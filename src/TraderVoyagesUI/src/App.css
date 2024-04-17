@@ -163,7 +163,7 @@
   border: 1px solid gray;
 }
 
-.buttons-for{
+.buttons-for {
   text-transform: uppercase;
   font-size: large;
   top: 5%;
@@ -180,8 +180,6 @@
   border-radius: 5px;
   justify-content: space-between;
 }
-
-
 
 #colnum {
   position: fixed;
@@ -218,14 +216,13 @@
   z-index: 2;
 }
 
-.castle{
+.castle {
   position: absolute;
   top: 50%;
   left: 68%;
   transform: translate(-50%, -50%);
   width: 100px;
   z-index: 1;
-
 }
 
 .table-row {
