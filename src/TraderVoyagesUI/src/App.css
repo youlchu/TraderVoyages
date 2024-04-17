@@ -163,6 +163,26 @@
   border: 1px solid gray;
 }
 
+.buttons-for{
+  text-transform: uppercase;
+  font-size: large;
+  top: 5%;
+  justify-content: space-between;
+  left: 5%;
+}
+
+.buttons-for button {
+  background-color: #ef704f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+
+
 #colnum {
   position: fixed;
   font-size: 6px;
@@ -171,7 +191,7 @@
   display: flex;
   flex-wrap: wrap;
   overflow: auto;
-  color: #ccc;
+  color: #000;
   border-collapse: separate;
   border-spacing: 10px;
   margin-bottom: 19px;
@@ -196,6 +216,16 @@
   transform: translate(-50%, -50%);
   width: 40px;
   z-index: 2;
+}
+
+.castle{
+  position: absolute;
+  top: 50%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  z-index: 1;
+
 }
 
 .table-row {
